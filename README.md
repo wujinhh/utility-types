@@ -77,7 +77,7 @@ We are open for contributions. If you're planning to contribute please make sure
 
 ---
 
-* _(built-in)_ - types built-in TypeScript, no need to import
+* _(built-in)_ - types built into TypeScript, no import required
 
 # Table of Contents
 
@@ -471,6 +471,8 @@ type Props = Optional<Props, 'age' | 'visible'>;
 
 From `T` pick a set of properties by key `K`
 
+This is a TypeScript built-in utility type.
+
 **Usage:**
 
 ```ts
@@ -527,6 +529,8 @@ type Props = PickByValueExact<Props, number | undefined>;
 
 From `T` remove a set of properties by key `K`
 
+This is a TypeScript built-in utility type.
+
 **Usage:**
 
 ```ts
@@ -544,6 +548,8 @@ type OmittedProps = Omit<Props, 'age'>;
 
 Construct an object type whose property keys are `K` and whose property values
 are `T`.
+
+This is a TypeScript built-in utility type.
 
 **Usage:**
 
@@ -732,6 +738,8 @@ type BinaryItems = ValuesType<BinaryArray>;
 
 Make all properties of object type optional
 
+This is a TypeScript built-in utility type.
+
 **Usage:**
 
 ```ts
@@ -765,6 +773,8 @@ type Props = Required<Props, 'age' | 'visible'>;
 ### `Readonly<T>`
 
 Make all properties of object type readonly
+
+This is a TypeScript built-in utility type.
 
 **Usage:**
 
@@ -924,6 +934,8 @@ type PartialNestedProps = DeepPartial<NestedProps>;
 
 Obtain the parameter types of a function type in a tuple.
 
+This is a TypeScript built-in utility type.
+
 **Usage:**
 
 ```ts
@@ -939,6 +951,8 @@ type SubmitArgs = Parameters<SubmitHandler>;
 
 Obtain the return type of a function
 
+This is a TypeScript built-in utility type.
+
 **Usage:**
 
 ```ts
@@ -953,6 +967,8 @@ type FnReturn = ReturnType<Fn>;
 ### `ConstructorParameters<T>`
 
 Obtain the parameter types of a constructor function type in a tuple.
+
+This is a TypeScript built-in utility type.
 
 **Usage:**
 
@@ -970,6 +986,8 @@ type UserConstructorArgs = ConstructorParameters<typeof User>;
 ### `InstanceType<T>`
 
 Obtain the instance type of a class
+
+This is a TypeScript built-in utility type.
 
 **Usage:**
 
